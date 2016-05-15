@@ -1,18 +1,21 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
+<html>
+<link>
     <meta charset="UTF-8">
     <title>interactive-trail-map-test</title>
 
-    <script src="../lib/jquery.min.js" type="application/javascript" />
+    <script src="../lib/jquery.min.js" type="application/javascript"></script>
+    <script src="../lib/leaflet/leaflet.js" type="application/javascript" ></script>
+    <link rel="stylesheet" href="../lib/leaflet/leaflet.css"/>
 
-    <script src="../src/js/itm.app.js" type="application/javascript" />
-    <link rel="stylesheet" href="../src/css/style.css">
+    <script src="../src/js/itm.app.js" type="application/javascript"></script>
+    <link rel="stylesheet" href="../src/css/style.css" />
+
+
 </head>
 <body>
 
     <script type="application/javascript">
-        console.log('test');
         $(function() {
            InteractiveTrailMap.prototype.initialize('.main');
         });

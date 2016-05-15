@@ -1,7 +1,7 @@
 /// <reference path="../../typings/tsd.d.ts" />
 import {IitmSettings} from "./itm.settings";
 
-export class InteractiveTrailMap {
+class InteractiveTrailMap {
 
     public settings: IitmSettings;
 
@@ -9,8 +9,6 @@ export class InteractiveTrailMap {
     }
 
     public initialize(parent: String) {
-        $.get("../templates/app.html", function(data){
-            $(parent).html(data);
-        });
+        $(parent).load("../src/templates/app.html");
     }
 }
