@@ -11,4 +11,8 @@ class InteractiveTrailMap {
     public initialize(parent: String) {
         $(parent).load("../src/templates/app.html");
     }
+
+    public setMap(path) {
+        $('.itm-map').css("background-image", "url('" + path + "')");
+    }
 }
